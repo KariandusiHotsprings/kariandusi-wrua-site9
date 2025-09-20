@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kariandusi Hotsprings Conservation & Ecotourism Hub</title>
+  <meta name="description" content="Support the Kariandusi WRUA to conserve the hotsprings, protect Lake Elementaita, and expand safe community water supply." />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="preload" href="assets/logo.png" as="image" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <div class="brand">
+        <img src="assets/logo.png" alt="Kariandusi CBO logo" class="logo" />
+        <div class="brand-text">
+          <h1>Kariandusi Hotsprings<br/>Conservation & Ecotourism Hub</h1>
+          <p class="subtitle">Water Resource Users Association (WRUA) • Gilgil, Kenya</p>
+        </div>
+      </div>
+      <nav>
+        <a href="#mission">Mission</a>
+        <a href="#projects">Projects</a>
+        <a href="#donate" class="btn primary">Donate</a>
+        <a href="#contact" class="btn outline">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <h2>Protect the Hotsprings. Safeguard Our Water. Empower the Community.</h2>
+        <p>
+          The Kariandusi WRUA stewards the Kariandusi Hotsprings and the greater Lake Elementaita
+          catchment—restoring wetlands, improving water quality, and building resilient livelihoods
+          through eco‑tourism and community water access.
+        </p>
+        <div class="cta-row">
+          <a href="#donate" class="btn xl primary">Give Now</a>
+          <a href="#projects" class="btn xl ghost">See Our Projects</a>
+        </div>
+      </div>
+      <div class="hero-card" aria-hidden="true">
+        <img src="assets/logo.png" alt="" />
+      </div>
+    </div>
+  </section>
+
+  <section id="mission" class="section">
+    <div class="container grid-2">
+      <div>
+        <h3>Our Mission</h3>
+        <p>
+          To conserve the Kariandusi Hotsprings ecosystem, protect the Lake Elementaita UNESCO site,
+          and expand safe, reliable water supply for surrounding villages—through science‑based
+          catchment management, local stewardship, and nature‑positive tourism.
+        </p>
+        <ul class="checklist">
+          <li>Water quality monitoring & watershed restoration</li>
+          <li>Community water points and pipeline upgrades</li>
+          <li>Eco‑tourism trails, guides, and visitor facilities</li>
+          <li>Youth jobs & conservation training</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h4>How Your Donation Helps</h4>
+        <ul class="bullets">
+          <li><strong>$25</strong> funds 1 water test kit refill</li>
+          <li><strong>$100</strong> plants 20 native trees along riparian zones</li>
+          <li><strong>$500</strong> outfits a community water kiosk with filtration</li>
+          <li><strong>$2,500</strong> supports a hotsprings trail segment & signage</li>
+        </ul>
+        <a href="#donate" class="btn primary block">Donate to Kariandusi WRUA</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section alt">
+    <div class="container">
+      <h3>Current Priority Projects</h3>
+      <div class="cards grid-3">
+        <article class="card">
+          <h4>Water Quality & Wetland Restoration</h4>
+          <p>Quarterly sampling, spring protection, erosion control, and native re‑vegetation to reduce sedimentation into the lake.</p>
+        </article>
+        <article class="card">
+          <h4>Community Water Access</h4>
+          <p>Upgrading pipelines, kiosks, and storage—bringing clean, reliable water closer to homes and schools.</p>
+        </article>
+        <article class="card">
+          <h4>Eco‑Tourism Hub</h4>
+          <p>Low‑impact trails, guide training, and visitor amenities to generate sustainable income for conservation.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="donate" class="section">
+    <div class="container grid-2">
+      <div>
+        <h3>Donate</h3>
+        <p>
+          Every contribution fuels on‑the‑ground conservation and community water solutions.
+          Choose a method below or email us for bank/M‑Pesa details.
+        </p>
+        <div class="donate-buttons">
+          <a class="btn primary" href="mailto:Kariandusihotsprings@gmail.com?subject=Kariandusi%20WRUA%20Donation">Email for Bank/M‑Pesa Details</a>
+          <a class="btn outline" href="#!" onclick="openPledge()">Make a Pledge</a>
+        </div>
+        <p class="note">For grants or large gifts, please contact us to receive an official proposal and budget.</p>
+      </div>
+      <form class="card pledge-form" onsubmit="return handlePledge(event)" aria-label="Donation pledge form">
+        <h4>Pledge Form</h4>
+        <label>
+          Name
+          <input required type="text" id="name" placeholder="Your full name" />
+        </label>
+        <label>
+          Email
+          <input required type="email" id="email" placeholder="you@example.com" />
+        </label>
+        <label>
+          Amount (USD or KES)
+          <input required type="text" id="amount" placeholder="e.g., 100 USD or 10,000 KES" />
+        </label>
+        <label>
+          Message (optional)
+          <textarea id="message" rows="3" placeholder="Any note to our team"></textarea>
+        </label>
+        <button type="submit" class="btn primary block">Send Pledge</button>
+        <p id="form-status" role="status" class="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <section id="contact" class="section alt">
+    <div class="container grid-2">
+      <div>
+        <h3>Contact</h3>
+        <p><strong>Email:</strong> <a href="mailto:Kariandusihotsprings@gmail.com">Kariandusihotsprings@gmail.com</a></p>
+        <p><strong>Location:</strong> Kariandusi, Gilgil Sub‑County, Nakuru County, Kenya</p>
+      </div>
+      <div class="card">
+        <h4>Partner With Us</h4>
+        <p>We welcome partnerships with county government, universities, tour operators, and development organizations.</p>
+        <a class="btn outline block" href="mailto:Kariandusihotsprings@gmail.com?subject=Partnership%20Inquiry">Email Partnership Team</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="assets/logo.png" alt="" />
+        <span>Kariandusi WRUA • © <span id="year"></span></span>
+      </div>
+      <nav class="footer-links">
+        <a href="#mission">Mission</a>
+        <a href="#projects">Projects</a>
+        <a href="#donate">Donate</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
